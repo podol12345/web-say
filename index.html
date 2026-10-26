@@ -8,66 +8,46 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f4f8;
             text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #2563eb;
-            color: white;
-            padding: 25px;
-        }
-
-        main {
-            padding: 40px 20px;
+            background: #eaf2ff;
+            padding: 50px 15px;
         }
 
         button {
-            background-color: #2563eb;
+            background: #2563eb;
             color: white;
+            padding: 15px 25px;
             border: none;
-            padding: 12px 20px;
-            border-radius: 8px;
+            border-radius: 10px;
+            font-size: 18px;
             cursor: pointer;
         }
 
         button:hover {
-            background-color: #1d4ed8;
+            background: #1d4ed8;
         }
 
-        footer {
-            margin-top: 40px;
-            padding: 15px;
-            color: #555;
+        #hasil {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #166534;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Website Pertamaku 🚀</h1>
-        <p>Belajar membuat website dari nol</p>
-    </header>
+    <h1>Website Pertamaku 🚀</h1>
+    <p>Tekan tombol di bawah ini!</p>
 
-    <main>
-        <h2>Halo, Dunia!</h2>
-        <p>Selamat datang di website pertama saya.</p>
+    <button id="tombol">Klik Saya</button>
 
-        <button onclick="sapa()">Klik Saya</button>
-        <p id="hasil"></p>
-    </main>
-
-    <footer>
-        <p>© 2026 Website Saya</p>
-    </footer>
+    <p id="hasil"></p>
 
     <script>
-        function sapa() {
+        document.getElementById("tombol").addEventListener("click", function() {
             document.getElementById("hasil").textContent =
-                "Halo! Terima kasih sudah berkunjung 😊";
-        }
+                "Berhasil! 🎉 Tombol kamu berfungsi!";
+        });
     </script>
 </body>
 </html>
