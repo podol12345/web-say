@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pertamaku</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2563eb;
+            color: white;
+            padding: 25px;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 15px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Website Pertamaku 🚀</h1>
+        <p>Belajar membuat website dari nol</p>
+    </header>
+
+    <main>
+        <h2>Halo, Dunia!</h2>
+        <p>Selamat datang di website pertama saya.</p>
+
+        <button onclick="sapa()">Klik Saya</button>
+        <p id="hasil"></p>
+    </main>
+
+    <footer>
+        <p>© 2026 Website Saya</p>
+    </footer>
+
+    <script>
+        function sapa() {
+            document.getElementById("hasil").textContent =
+                "Halo! Terima kasih sudah berkunjung 😊";
+        }
+    </script>
+</body>
+</html>
